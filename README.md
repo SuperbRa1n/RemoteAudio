@@ -3,7 +3,7 @@
 ## 运行
 首先在python>=3.8环境下安装`requirements.txt`中需要的modules：
 ```cmd
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 再运行`main.py`文件：
 ```cmd
@@ -23,3 +23,4 @@ python main.py
 * `main.py`：主函数，按顺序执行所有内容，实现整个系统
 
 ## 报告指路
+https://tannin-1316822731.cos.ap-nanjing.myqcloud.com/2024-01-03-%E4%BF%A1%E6%8E%A7%E8%AE%A1%E5%A4%A7%E4%BD%9C%E4%B8%9A.pdf

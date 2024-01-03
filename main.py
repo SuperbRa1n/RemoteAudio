@@ -6,7 +6,6 @@ from modulate import Modulate
 from demodulate import Demodulate
 from awgn import AWGN
 import mfcc
-import data_pro as dp
 import control as ct
 
 path = './assets/'
@@ -14,8 +13,8 @@ path = './assets/'
 Rb = 50  # 比特速率50 bps
 M = 2  # 二进制BPSK
 Rs = Rb * np.log2(M)  # 码元速率50 bps * log2(2) = 50 bps * 1 = 50 bps
-fc = 5e3  # 载波频率5 kHz
-fs = 100e3  # 采样频率100 kHz
+fc = 5e3 # 载波频率5 kHz
+fs = 10e3  # 采样频率100 kHz
 sps = fs / Rs  # 每个码元采样点数100 kHz / 50 bps = 2000
 SNR = 10  # 信噪比10 dB
 
@@ -106,7 +105,6 @@ def main():
     # 指令控制测试
     for i in range(4):
         print(ct.construction_classify(dtw_mat[i]))
-    
     
 if __name__ == '__main__':
     main()
